@@ -15,6 +15,8 @@ return {
           "pyright",       -- Python
           "rust_analyzer", -- Rust
           "jdtls",         -- Java
+          "astro",
+          "ts_ls",         -- Typescript
         },
       })
     end,
@@ -48,7 +50,7 @@ return {
       })
 
       -- 2. Enable the language servers for their associated filetypes
-      vim.lsp.enable({ "lua_ls", "pyright", "rust_analyzer", "jdtls" })
+      vim.lsp.enable({ "lua_ls", "pyright", "rust_analyzer", "jdtls", "astro", "ts_ls" })
     end,
   },
 }
